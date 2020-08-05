@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/93e62e3e03.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+    <style>
+        * {
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+         .contenedor
+        {
+            height: 100vh;
+            position: relative;
+            background-color:#001f3f;
+            
+        }
+         .marco
+        {
+            display:block;
+            margin: 0 auto;
+            width: 40%;
+            border: 1px solid black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+        }
+        .header
+        {
+            font-size: 2.5em;
+            line-height: 2.5em;
+            position:absolute;
+            top: 10%;
+            text-align: center;
+            width: 100%;
+            color: #80bfe7;
+        }
+        .login
+        {
+            padding: 20px 0px;
+            background-color: #80bfe7;
+            border-radius:5px;
+        } 
+       label
+        {
+            display: block;
+            width: 55%;
+            font-size: 2em;
+            margin: 10px;
+        }
+        input[type="text"]
+        ,input[type="password"]
+        {
+            line-height: 1.5em;
+            font-size: 1.5em;
+            width: 85%;
+            padding: 10px 0 10px 20px;
+            border: 2px solid #001f3f;
+            border-left: none;
+            border-radius: 0px 10px 10px 0px;
+            color: #001f3f;
+            
+        }
+
+        fieldset
+        {
+            padding: 25px 10px;
+            border:none;
+        }
+        .icono
+        {
+            margin-left: 25px;
+            border: 2px solid #001f3f;
+            border-radius: 10px 0 0 10px;
+            padding: 10px;
+            line-height: 1.5em;
+            font-size: 1.5em;
+            float: left;
+        }
+        .btn
+        {
+            display: block;
+            margin: 0 auto;
+            width: 75%;
+            line-height: 2em;
+            font-size: 1.85em;
+            border-radius: 35px;
+            color: #80bfe7;
+            border: 2px solid #001f3f;
+            border-radius: 10px;
+            background: #001f3f;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="header">
+                <h2>Bienvenido, este texto es introductorio al sitio web</h2>
+        </div>
+        <div class="marco">
+            <form class="login">
+                <fieldset>
+                    <!-- <label for="txtUsuario">Usuario</label> -->
+                    <span class="fas fa-user-circle icono"></span>
+                    <input type="text" name="txtUsuario" placeholder="Ingresa tu nombre de Usuario" />
+                </fieldset>
+                <fieldset>
+                    <!-- <label for="txtPassword">Contraseña</label> -->
+                    <span class="fas fa-key icono"></span>
+                    <input type="text" name="txtPassword" placeholder="Digita tu Contraseña" />
+                </fieldset>
+                <fieldset>
+                    <input class="btn" type="button" value="Ingresar"/>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
